@@ -34,6 +34,7 @@ nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    cursor: pointer;
 }
 
 main {
@@ -164,4 +165,20 @@ article img {
 
 .flecha-arriba:hover {
     background-color: darkgray;
+}
+
+.boton {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 15px;
+    background-color: #87CEEB;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #4682B4;
+    color: white;
 }
