@@ -2,23 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
     const tableRows = document.querySelectorAll("tbody tr");
 
-    const botonLeerMas = document.getElementById("boton-leer-mas");
-    const cvAbreviado = document.getElementById("cv-abreviado");
-    const cvCompleto = document.getElementById("cv-completo");
-
-    botonLeerMas.addEventListener("click", function() {
-        if (cvCompleto.style.display === "none") {
-            cvCompleto.style.display = "block";
-            cvAbreviado.style.display = "none";
-            botonLeerMas.textContent = "Leer menos";
-        } else {
-            cvCompleto.style.display = "none";
-            cvAbreviado.style.display = "block";
-            botonLeerMas.textContent = "Leer más";
-        }
-    });
-
-    form.addEventListener("submit", function(event) {
+    form.addEventListener("input", function() {
 
         const nombre = document.getElementById("nombre").value;
         const apellido = document.getElementById("apellido").value;
@@ -45,5 +29,25 @@ document.addEventListener("DOMContentLoaded", function() {
                                   .join(", ");
         tableRows[9].cells[1].textContent = suscripciones;
     });
+
+});
+
+document.addEventListener("DOMContentLoaded", function(){
+    const botonLeerMas = document.getElementById("btnLeerMas");
+    const cvAbreviado = document.getElementById("CvAbreviado");
+    const cvCompleto = document.getElementById("CvCompleto");
+
+    botonLeerMas.addEventListener("click", function(){
+        if(cvCompleto.style.display === "none") {
+            cvCompleto.style.display = "block";
+            cvAbreviado.style.display = "none";
+            botonLeerMas.textContent = "Leer menos";
+        } else {
+            cvCompleto.style.display = "none";
+            cvAbreviado.style.display = "block";
+            botonLeerMas.textContent = "Leer más";
+        }
+    });
+
 });
 

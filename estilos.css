@@ -182,3 +182,7 @@ article img {
     background-color: #4682B4;
     color: white;
 }
+
+#CvCompleto {
+    display: none;
+}
