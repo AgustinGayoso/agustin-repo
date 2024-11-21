@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
-    <title>Agustin Gayoso</title>
+    <title>Document</title>
 </head>
 <body>
     <header>
@@ -15,24 +14,30 @@
         </h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="acercade.html">Acerca de</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="juego.html">Juego</a></li>
+                <li><a href="#">Juego</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Bienvenidos a mi pagina personal</h2>
+        <h2>Juego Piedra, Papel o Tijera</h2>
+        <div class="contenedorJuego">
+            <p>Elige tu opción:</p>
+            <button class="boton" data-choice="piedra">Piedra</button>
+            <button class="boton" data-choice="papel">Papel</button>
+            <button class="boton" data-choice="tijera">Tijera</button>
+        </div>
+        <div class="resultados">
+            <p id="resultados"></p>
+            <p id="puntuacion">Puntuación: Jugador 0 - 0 Computadora</p>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Agustín Gayoso. Todos los derechos reservados.</p>
-        <address>
-            Monseñor Esandi y Ayacucho<br>
-            Viedma, Río Negro<br>
-            Argentina
-        </address>
     </footer>
     <a href="#" class="flecha-arriba">&#8593;</a>
+    <script src="juego.js"></script>
 </body>
 </html>

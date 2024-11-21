@@ -186,3 +186,31 @@ article img {
 #CvCompleto {
     display: none;
 }
+
+.contenedorJuego {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.resultados {
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.boton {
+    padding: 10px 20px;
+    background-color: #87CEEB;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.boton:hover {
+    background-color: #4682B4;
+    color: white;
+}
